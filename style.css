@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+
+
+/* -----nav----- */
+
+.under_hover:hover {
+    -webkit-text-stroke: 0.2px white;
+    color: white;
+}
+
+.view {
+    top: 0 !important;
+}
+
+.crossLine1 {
+    rotate: 58deg;
+}
+
+.crossLine2 {
+    rotate: 123deg;
+    bottom: 63%;
+}
+
+
+/* -------accordion------- */
+
+.accordionMenu input[type=radio] {
+    display: none;
+}
+
+.custom-text {
+    -webkit-text-stroke: 1.5px white;
+}
+
+.accordionMenu .content {
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordionMenu input[type=radio]:checked+label p svg {
+    transform: rotate(180deg);
+}
+
+.accordionMenu input[type=radio]:checked+label+.content {
+    max-height: 2000px;
+    height: auto;
+}
+
+.accordionMenu1 input[type=radio] {
+    display: none;
+}
+
+.duration {
+    transition: all linear 300ms;
+}
+
+.accordionMenu1 .content1 {
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordionMenu1 input[type=radio]:checked+label p span .plus {
+    display: none;
+}
+
+.accordionMenu1 input[type=radio]:checked+label p span .sub {
+    transform: translateX(-10px);
+}
+
+.accordionMenu1 input[type=radio]:checked+label+.content1 {
+    max-height: 2000px;
+    height: auto;
+}
