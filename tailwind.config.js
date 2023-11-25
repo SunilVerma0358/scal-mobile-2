@@ -38,6 +38,7 @@ export default {
                 hover360: 'hover360 7s linear infinite',
                 rotate180: 'hover180 3s linear infinite',
                 updown: 'updown 4s linear infinite',
+                backtotop: 'backtotop 3s linear infinite',
             },
             keyframes: {
                 logo: {
@@ -92,6 +93,11 @@ export default {
 
                     '50%': { transform: 'translateY(5%)' },
                     '100%': { transform: 'translateY(-5%)' }
+                },
+                backtotop: {
+                    '0%': { transform: 'translateY(-10%)' },
+                    '50%': { transform: 'translateY(10%)' },
+                    '100%': { transform: 'translateY(-10%)' }
                 },
 
             }
